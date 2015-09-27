@@ -1,5 +1,5 @@
 ---
-title       : Linear Prediction Model
+title       : Iris Species Prediction
 subtitle    : 
 author      : Xiao
 job         : 
@@ -11,15 +11,15 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## The purpose of this prediction
+## Purpose of the exercise
 
-1. To determine the species of Iris flower based a few basic measures
-2. Using R's iris data to train a random forest model for prediction
-3. Input any value for sepal length, width and petal length and width to find out what the model predicts!
+1. Test a model's ability to predict flower species
+2. Model trained using R Iris data with a rpart tree model
+3. Send in the measurements of your flower and find out its species!
 
 --- .class #id 
 
-## Instruction on how to use the page
+## User Instruction
 
 1. Enter the parameter on the left
 2. Press submit
@@ -27,16 +27,16 @@ knit        : slidify::knit2slides
 
 --- .class #id 
 
-## Caveats
+## Caveat and Improvements
 
-1. The model is rudimentary, however, it still might be a bit lagged
+1. The model is simplistic, but the running time is still fairly long
+2. Performance and library needs to be improved
+3. Try more models in the future, including random forest
 
 --- .class #id 
 
 ## Q&A
 
 question?
-
-
 
 

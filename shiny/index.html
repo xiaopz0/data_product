@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Linear Prediction Model</title>
+  <title>Iris Species Prediction</title>
   <meta charset="utf-8">
-  <meta name="description" content="Linear Prediction Model">
+  <meta name="description" content="Iris Species Prediction">
   <meta name="author" content="Xiao">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -31,7 +32,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Linear Prediction Model</h1>
+    <h1>Iris Species Prediction</h1>
     <h2></h2>
     <p>Xiao<br/></p>
   </hgroup>
@@ -42,13 +43,13 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>The purpose of this prediction</h2>
+    <h2>Purpose of the exercise</h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>To determine the species of Iris flower based a few basic measures</li>
-<li>Using R&#39;s iris data to train a random forest model for prediction</li>
-<li>Input any value for sepal length, width and petal length and width to find out what the model predicts!</li>
+<li>Test a model&#39;s ability to predict flower species</li>
+<li>Model trained using R Iris data with a rpart tree model</li>
+<li>Send in the measurements of your flower and find out its species!</li>
 </ol>
 
   </article>
@@ -57,7 +58,7 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Instruction on how to use the page</h2>
+    <h2>User Instruction</h2>
   </hgroup>
   <article data-timings="">
     <ol>
@@ -72,11 +73,13 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Caveats</h2>
+    <h2>Caveat and Improvements</h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>The model is rudimentary, however, it still might be a bit lagged</li>
+<li>The model is simplistic, but the running time is still fairly long</li>
+<li>Performance and library needs to be improved</li>
+<li>Try more models in the future, including random forest</li>
 </ol>
 
   </article>
@@ -100,19 +103,19 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='The purpose of this prediction'>
+        data-slide=1 title='Purpose of the exercise'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Instruction on how to use the page'>
+        data-slide=2 title='User Instruction'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Caveats'>
+        data-slide=3 title='Caveat and Improvements'>
          3
       </a>
     </li>

@@ -1,7 +1,9 @@
 irisSpecies <- function(SepalLength,SepalWidth,PetalLength,PetalWidth) {
   data(iris)
   library(caret)
-  myModel <- train(Species~., data = iris, method = 'rf', ntree = 5)
+  library(e1071)
+  library(rpart)
+  myModel <- train(Species~., data = iris, method = 'rpart')
   newdata = data.frame(Sepal.Length = SepalLength,Sepal.Width = SepalWidth,
                        Petal.Length = PetalLength,Petal.Width = PetalWidth)
   my_predict = predict(myModel,newdata=newdata)
